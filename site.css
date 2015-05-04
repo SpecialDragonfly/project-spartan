@@ -1,0 +1,127 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  padding:0px;
+  margin:0px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:14px;
+}
+
+.heading {
+  height:30px;
+  margin-bottom:2em;
+}
+
+#name:after {
+  content:" - ";
+}
+
+.heading .title {
+  padding:5px;
+  font-size:1.5em;
+}
+
+.title {
+  margin-left:5px;
+}
+
+.main {
+  width:90%;
+  margin:auto;
+}
+
+.card {
+  width:40%;
+  margin:auto;
+  border:1px solid grey;
+  box-shadow: 10px 10px 5px #888888;
+  min-width:235px;
+}
+
+.content {
+  position:relative;
+  left: -50px;
+  min-width:280px;
+}
+
+.picture {
+  width:100px;
+  border:2px solid black;
+  border-radius:25px;
+  display:inline-block;
+  margin-top:3px;
+}
+
+.information {
+  display:inline-block;
+  vertical-align:top;
+  list-style-type:none;
+  -webkit-padding-start:2%;
+  -webkit-margin-before:0px;
+  -webkit-margin-after:0px;
+  -webkit-margin-start:0px;
+  -webkit-margin-end:0px;
+  margin-top:20px;
+}
+
+.footer {
+  position:fixed;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  text-align:center;
+}
+
+@media only screen and (min-width:960px) {
+  .picture {
+    content: url('/images/me_large.jpg');
+  }
+}
+
+@media only screen and (max-height:320px) {
+  #name::after {
+    content: "";
+  }
+  #job_title {
+    display:block;
+  }
+  .heading {
+    margin-bottom:3em;
+  } 
+}
+
+@media only screen and (max-width:639px) {
+  body {
+    font-size:18px;
+  }
+  #name::after {
+    content: "";
+  }
+  #job_title {
+    display:block;
+  }
+  .heading {
+    margin-bottom:3em;
+  } 
+
+ .content {
+    position:inherit;
+    left:auto;
+    min-width:0px;
+    text-align:center;
+    line-height:1.5em;
+  }
+  .card {
+    min-width:248px;
+    padding:5px;
+  }
+  .picture {
+    margin-top:5px;
+  }
+ .information {
+    text-align:left;
+    width:100%;
+  }
+}
