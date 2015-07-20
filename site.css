@@ -33,11 +33,12 @@ body {
 }
 
 .card {
-  width:40%;
+  width:370px;
+  min-width:370px;
+  max-width:370px;
   margin:auto;
   border:1px solid grey;
   box-shadow: 10px 10px 5px #888888;
-  min-width:235px;
 }
 
 .content {
@@ -74,13 +75,7 @@ body {
   text-align:center;
 }
 
-@media only screen and (min-width:960px) {
-  .picture {
-    content: url('/images/me_large.jpg');
-  }
-}
-
-@media only screen and (max-height:320px) {
+@media only screen and (device-height:360px) {
   #name::after {
     content: "";
   }
@@ -89,10 +84,10 @@ body {
   }
   .heading {
     margin-bottom:3em;
-  } 
+  }
 }
 
-@media only screen and (max-width:639px) {
+@media only screen and (max-device-width:640px) and (orientation: portrait) {
   body {
     font-size:18px;
   }
@@ -114,7 +109,9 @@ body {
     line-height:1.5em;
   }
   .card {
-    min-width:248px;
+    width:40%;
+    min-width:320px;
+    max-width:none;
     padding:5px;
   }
   .picture {
