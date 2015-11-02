@@ -33,9 +33,9 @@ body {
 }
 
 .card {
-  width:370px;
-  min-width:370px;
-  max-width:370px;
+  width:375px;
+  min-width:375px;
+  max-width:375px;
   margin:auto;
   border:1px solid grey;
   box-shadow: 10px 10px 5px #888888;
@@ -64,6 +64,9 @@ body {
   -webkit-margin-after:0px;
   -webkit-margin-start:0px;
   -webkit-margin-end:0px;
+  -moz-padding-start: 2%;
+  -moz-margin-start: 0px;
+  -moz-margin-end: 0px;
   margin-top:20px;
 }
 
