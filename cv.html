@@ -1,14 +1,30 @@
-
-
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-	<title></title>
+	<title>Curriculum Vitae - Dominic Orme</title>
 	
-	<style type="text/css">* {
+	<style type="text/css">
+	* {
 		box-sizing: border-box;
 	}
-	div.heading, div.personal, div.profile, div.work-experience, div.additional {
-		margin-bottom:10px;
+
+	body {
+		padding:10px;
+	}
+	
+	ul {
+		margin-top:5px;
+	}
+
+	strong {
+		padding-right:5px;
+	}
+
+	span {
+		display: inline-block;
+	}
+
+	.offline {
+		display:none;
 	}
 
 	.address-block span {
@@ -16,245 +32,298 @@
 	}
 
 	.heading {
-		width:200mm;
 		text-align: center;
+		font-size:2em;
 	}
 
-	.name {
-		max-width:100mm;
-		min-width:100mm;
+	.sub-heading {
+		text-align:left;
+		font-size:1.1em;
+		font-weight:bold;
+		width:100%;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		margin-top:15px;
 	}
 
-	.from {
-		max-width:50mm;
-		min-width:50mm;
-	}
-
-	.to {
-		max-width:50mm;
-		min-width:50mm;		
-	}
-	
 	.break {
-	    margin-top:10px;
+		display:none;
 	}
 
-	strong {
+	.personal {
+		text-align:center;
+	}
+
+	.personal .mobile {
+		float:right;
+		width:25%;
+		text-align:right;
+	}
+
+	.personal .email {
+		float: left;
+		text-align:left;
+		width:25%;
+	}
+
+	.personal-statement p {
+		margin-top:0.5em;
+		margin-bottom:0.5em;
+	}
+
+	.job ~ .job{
+		border-top:1px solid grey;
+	}
+
+	.job .details .name {
+		min-width:49%;
+		font-weight: bold;
+		display: inline-block;
+	}
+
+	.job .details .name span {
 		margin-right:5px;
 	}
 
-	table {
-		border-top:1px solid black;
-		border-left:1px solid black;
-		border-spacing: 0px;
-		padding: 0px;
-		margin: 0px;
-		max-width:200mm;
-		min-width:200mm;
+	.job .details .from {
+		width: 25%;
+		display: inline-block;
 	}
-	th {
-		border-right:1px solid black;
-		border-bottom:1px solid black;
-		background-color:lightgrey;
-		text-align: left;
-		padding:5px;
+
+	.job .details .to {
+		float: right;
+		width: 25%;
 	}
-	td {
-		border-right:1px solid black;
-		border-bottom:1px solid black;
-		padding:5px;
+
+	.job .details {
+		display:block;
+		margin-bottom:5px;
+		margin-top:5px;
+	}
+
+	.job .about {
+		margin-bottom:5px;
+	}
+
+	.job .technologies {
+		clear: both;
 	}
 
 	@media print {
-		.break { page-break-after: always; margin-top:0px;}
+		.heading {
+			width:200mm;
+		}
+		.sub-heading {
+			width:200mm;
+		}
+
+		.personal {
+			width:200mm;
+		}
+
+		.personal .contact .mobile {
+			width:30mm;
+			/*border: 1px solid black;*/
+		}
+		.personal .contact .linkedin {
+			width:200mm;
+			overflow:hidden;
+			/*border: 1px solid red;*/
+		}
+		.personal .contact .email {
+			width:60mm;
+			/*border: 1px solid blue;*/
+		}
+
+		.job {
+			width:200mm;
+		}
+
+		.online {
+			display:none;
+		}
+
+		.offline {
+			display: list-item;
+		}
+
+		.break { display:block; page-break-after: always; margin-top:0px;}
 	}
 	</style>
 </head>
 <body>
-<div class="heading">Curriculum Vitae - Dominic Orme</div>
-
+<div class="heading">Dominic Orme</div>
 <div class="personal">
-<table>
-	<tbody>
-		<tr>
-			<th colspan="4">Personal</th>
-		</tr>
-		<tr>
-			<td>Address</td>
-			<td class="address-block"><span>Address</span><span>Goes</span><span>Here</span></td>
-			<td>Telephone:</td>
-			<td>Number goes here</td>
-		</tr>
-		<tr>
-			<td>Email:</td>
-			<td colspan="3">email address</td>
-		</tr>
-		<tr>
-			<td>Education:</td>
-			<td colspan="3">The University of Sussex, Brighton (2004 - 2007)</td>
-		</tr>
-		<tr>
-			<td>Github:</td>
-			<td colspan="3">https://github.com/SpecialDragonfly</td>
-		</tr>
-	</tbody>
-</table>
+	<div class="education">BSc Theoretical Physics, University Of Sussex 2004 - 2007</div>
+	<div class="address">52 Dunstall Farm Road, Burgess Hill, RH15 8BJ</div>
+	<div class="contact">
+		<div class="mobile">07858 003 505</div>
+		<div class="email">Dominic.Orme@googlemail.com</div>
+		<div class="linkedin"><a href="https://www.linkedin.com/in/dominicorme">https://www.linkedin.com/in/dominicorme/</a></div>
+	</div>
 </div>
 
-<div class="profile">
-<table>
-	<tbody>
-		<tr>
-			<th colspan="2">Profile</th>
-		</tr>
-		<tr>
-			<td>Languages:</td>
-			<td>PHP, JavaScript, SQL, Java, C#, Ruby on Rails, LESS</td>
-		</tr>
-		<tr>
-			<td>Experience:</td>
-			<td>Manager with knowledge of Agile and Lean software development practices. Previous experience with a large range of programming languages and their use in the financial services industry.</td>
-		</tr>
-	</tbody>
-</table>
+<div class="sub-heading">Personal Statement</div>
+<div class="personal-statement">
+	<p>
+My progression from Developer through to Team Lead has given me the pleasure of managing teams of skilled individuals. Management came with challenges including conflict resolution and teaching either Agile or Lean software development practises.
+</p>
+<p>
+As a Developer I enjoyed working with data, either from existing data sets or parsing it as it comes in. There are challenges inherent in both, but ultimately it came down to how fast the data could be parsed, and could the final product be maintained. I enjoyed pushing the boundaries of this "fast but maintainable" paradigm.
+</p>
+<p>
+My career so far has primarily been in the financial services industry for this reason; the sector produces substantial amounts of data and needs quick responses.
+</p>
 </div>
 
-<div class="work-experience">
-<table>
-	<tbody>
-		<tr>
-			<th colspan="3">Work Experience</th>
-		</tr>
-    <tr class="job">
-      <td class="name"><span>Movem Ltd:</span><span>Lead Backend Developer</span></td>
-      <td class="from"><strong>From:</strong> April 2018</td>
-      <td class="to"><strong>To:</strong>Present</td>
-    </tr>
-    <tr>
-      <td colspan="3">Responsible for:
+<div class="sub-heading">Work Experience</div>
+<div class="job">
+	<div class="details">
+		<div class="to"><strong>To:</strong>Present</div>
+		<div class="name"><span>Movem Ltd:</span><span>Lead Backend Developer</span></div>
+		<div class="from"><strong>From:</strong> April 2018</div>
+	</div>
+	<div class="about">
+		Movem are a property-technology (prop-tech) company. Recently acquired by Barbon, they are changing the way people manage lettings. With the introduction of Open Banking, no longer will tenants need to provide copies of their statements, instead they'll log into their bank, Movem will get the transactions, and then using our algorithms, verify income, previous rent and the tenants affordability. This process previously took days, it now takes seconds.
+	</div>
+	<div class="technologies">
+		<strong>Technologies:</strong>PHP, MySQL, NodeJS, Docker, Kubernetes, Google Cloud Services, Golang
+	</div>
+	<div class="responsibilities">
+		Responsible for:
         <ul>
-          <li>Managing the movement from monolithic application to micro services</li>
+          <li>Managing the movement from monolithic application to microservices</li>
           <li>Writing and maintaining the algorithms for detection of rent and income from bank transactions obtained via Open Banking</li>
-        </ul>
-      </td>
-    </tr>
-    <tr><td colspan="3"></td></tr>
-		<tr class="job">
-			<td class="name"><span>World First Ltd:</span><span>Team Lead</span></td>
-			<td class="from"><strong>From:</strong> May 2016</td>
-			<td class="to"><strong>To:</strong>April 2018</td>
-		</tr>
-		<tr>
-			<td colspan="3">Responsible for:
-			<ul>
-				<li>Managing a team of ten, including staff satisfaction, career progression, training and learning.</li>
-				<li>Documenting and managing the high level design of the APIs</li>
-				<li>Facilitating communication, either between squads, or between World First and its external partnerships, including business analysts, product managers and external sources.</li>
-			</ul>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="3"></td>
-		</tr>
-		<tr class="job">
-			<td class="name"><span>World First Ltd:</span><span>Senior Developer</span></td>
-			<td class="from"><strong>From:</strong> November 2014</td>
-			<td class="to"><strong>To:</strong>May 2016</td>
-		</tr>
-		<tr>
-			<td colspan="3">Responsibilities included:
-			<ul>
-				<li>Designing, building and testing new APIs to improve the market position of World First.</li>
-				<li>Stakeholder management with non-technical colleagues.</li>
-			</ul>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="3"></td>
-		</tr>
-		<tr class="job">
-			<td class="name"><span>City and Guilds Kineo: </span><span>Senior Technical Consultant</span></td>
-			<td class="from"><strong>From:</strong>August 2013</td>
-			<td class="to"><strong>To:</strong>November 2014</td>
-		</tr>
-		<tr>
-			<td colspan="3">The company focused on building customisations of Totara; the business side of Moodle. Responsibilities included:
-			<ul>
-				<li>Line management of junior members of the team</li>
-				<li>Providing estimates for incoming work.</li>
-				<li>Completing work in PHP and jQuery. Bespoke elements were written using Silex.</li>
-			</ul>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="3"></td>
-		</tr>
-		<tr class="job">
-			<td class="name"><span>Sensatus Ltd:</span><span>Senior Developer</span></td>
-			<td class="from"><strong>From:</strong>March 2010</td>
-			<td class="to"><strong>To:</strong>August 2013</td>
-		</tr>
-		<tr>
-			<td colspan="3">
-			<ul>
-				<li>Maintenance of the timetotrade.eu website.</li>
-				<li>Experience building high traffic, highly available sites.</li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<div class="break"></div>
-
-<table>
-	<tbody>
-		<tr>
-			<th colspan="3">Work Experience continued</th>
-		</tr>
-		<tr class="job">
-			<td class="name"><span>Elysium Limited: </span><span>Developer</span></td>
-			<td class="from"><strong>From:</strong>April 2008</td>
-			<td class="to"><strong>To:</strong>March 2010</td>
-		</tr>
-		<tr>
-			<td colspan="3">
-			<ul>
-				<li>Part of a small development team creating bespoke software using Ruby on Rails.</li>
-				<li>Wrote many small programs including an administrative interface for a global courier firm whilst maintining the in house CMS.</li>
-			</ul>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="3"></td>
-		</tr>
-		<tr class="job">
-			<td class="name"><span>Best Execution Software Limited:</span><span>Junior Developer</span></td>
-			<td class="from"><strong>From:</strong>June 2007</td>
-			<td class="to"><strong>To:</strong>April 2008</td>
-		</tr>
-		<tr>
-			<td colspan="3">
-			<ul>
-				<li>Trainee developer responsible for maintaining the ProQuote trading platform for the London Stock Exchange.</li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
+          <li>Design and implementation of the APIs necessary for expansion and scaling</li>
+        </ul>		
+	</div>
+</div>
+<div class="job">
+	<div class="details">
+		<div class="to"><strong>To:</strong>April 2018</div>
+		<div class="name"><span>World First Ltd:</span><span>Development Team Lead</span></div>
+		<div class="from"><strong>From:</strong> May 2016</div>
+	</div>
+	<div class="about">
+		WorldFirst is a financial-technology (fin-tech) company, and they specialise is moving money around the world. Helping supply chains over multiple currencies became a matter of clicking a few buttons; it was simpler, cheaper and faster than commecial banks were doing it. This wasn't a holiday spending money operation, this was multiple millions of dollars being paid to a global payroll. This was a supplier manufacturing in China, selling in Britain and getting paid in Euros. This was an armchair seller, finding a product and within a day selling it globally and getting paid in their native currency.
+	</div>
+	<div class="technologies">
+		<strong>Technologies:</strong>PHP, MySQL, Vagrant, Docker, Ansible, Java, RabbitMQ, LeSS (Large Scale Scrum)
+	</div>
+	<div class="responsibilities">
+		Responsible for:
+		<ul>
+			<li>Managing a team of ten, including staff satisfaction, career progression, training and learning.</li>
+			<li>Documenting and managing the high level design of the APIs</li>
+			<li>Facilitating communication, either between teams, or between World First and its external partnerships, including business analysts, product managers and external sources.</li>
+		</ul>	
+	</div>
+</div>
+<div class="job">
+	<div class="details">
+		<div class="to"><strong>To:</strong>May 2016</div>
+		<div class="name"><span>World First Ltd:</span><span>Senior Developer</span></div>
+		<div class="from"><strong>From:</strong>November 2014</div>
+	</div>
+	<div class="technologies">
+		<strong>Technologies:</strong>PHP, MySQL, PHPUnit, Behat, Vagrant, Ansible
+	</div>
+	<div class="responsibilities">
+		Responsible for:
+		<ul>
+			<li>Designing, building and testing new APIs to improve the market position of World First.</li>
+			<li>Stakeholder management with non-technical colleagues.</li>
+		</ul>	
+	</div>
 </div>
 
-<div class="additional">
-<table>
-	<tbody>
-		<tr>
-			<th>Additional IT Skills</th>
-		</tr>
-		<tr>
-			<td>Knowledge of all major operating systems including Linux and Microsoft variants. Excellent knowledge of CVS, SVN and Git from experience and training.</td>
-		</tr>
-	</tbody>
-</table>
+<div class="break">&nbsp;</div>
+
+<div class="job">
+	<div class="details">
+		<div class="to"><strong>To:</strong>November 2014</div>
+		<div class="name"><span>City and Guilds Kineo: </span><span>Senior Technical Consultant</span></div>
+		<div class="from"><strong>From:</strong>August 2013</div>
+	</div>
+	<div class="about">
+		Kineo, a City and Guilds company, is an e-learning company. They specialise in bespoke e-learning courses managed via Moodle or Totara. From large multinationals to small local charities, e-learning allowed their staff to progress at their own speed, in their own time, to broaden their knowledge voluntarily and aid in their personal career growth.
+	</div>
+	<div class="technologies">
+		<strong>Technologies:</strong>PHP, MySQL, Moodle, Totara, jQuery
+	</div>
+	<div class="responsibilities">
+		The company focused on building customisations of Totara; the business side of Moodle. Responsibilities included:
+		<ul>
+			<li>Line management of junior members of the team</li>
+			<li>Providing estimates for incoming work.</li>
+			<li>Completing work in PHP and jQuery. Bespoke elements were written using Silex.</li>
+		</ul>	
+	</div>	
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+<div class="job">
+	<div class="details">
+		<div class="to"><strong>To:</strong>August 2013</div>
+		<div class="name"><span>Sensatus Ltd:</span><span>Senior Developer</span></div>
+		<div class="from"><strong>From:</strong>March 2010</div>
+	</div>
+	<div class="about">
+		Sensatus is a financial technology (fin-tech) company allowing users to create complicated automated trading algorithms without needing to know how to program at all. Algorithms could be run on the tick level, all the way up to days allowing for different trading strategies. Integration with London Capital Group allowed for spread betting, alternatively a 'fantasy' trading platform was available.
+	</div>
+	<div class="technologies">
+		<strong>Technologies:</strong>PHP, MySQL, C#, Java, jQuery, Backbone, RequireJS
+	</div>
+	<div class="responsibilities">
+		<ul>
+			<li>Maintenance of the timetotrade.eu website.</li>
+			<li class="online">Implemented the user interface for building algorithms, a demo of which can be seen here: <a href="https://www.youtube.com/watch?v=lRJHkQ6kFpk">Trigger Trading Technology</a></li>
+			<li class="offline">Implemented the user interface for building algorithms, a demo of which can be seen here: <a href="https://www.youtube.com/watch?v=lRJHkQ6kFpk">https://www.youtube.com/watch?v=lRJHkQ6kFpk</a></li>
+			<li>Experience building high traffic, highly available sites.</li>
+		</ul>	
+	</div>	
+</div>
+<div class="job">
+	<div class="details">
+		<div class="to"><strong>To:</strong>March 2010</div>
+		<div class="name"><span>Elysium Ltd:</span><span>Developer</span></div>
+		<div class="from"><strong>From:</strong>April 2008</div>
+	</div>
+	<div class="about">
+		Elysium is a media company, handling website design, creation and management for other companies. They also wrote SIPM (Sussex Injestive Pattern Monitor) which has ongoing use in psychological studies around eating disorders. Their largest clients included BT and Express &amp; Global.
+	</div>
+	<div class="technologies">
+		<strong>Technologies:</strong>Ruby on Rails, Java, PHP, PostgreSQL, MySQL, C#, ASP.Net, Prototype
+	</div>
+	<div class="responsibilities">
+		<ul>
+			<li>Part of a small development team creating bespoke software using Ruby on Rails.</li>
+			<li>Wrote many small programs including an administrative interface for a global courier firm whilst maintaining the in house CMS.</li>
+		</ul>	
+	</div>	
+</div>
+
+<div class="job">
+	<div class="details">
+		<div class="to"><strong>To:</strong>April 2008</div>
+		<div class="name"><span>Best Execution Software Ltd:</span><span>Junior Developer</span></div>
+		<div class="from"><strong>From:</strong>June 2007</div>
+	</div>
+	<div class="about">
+		Best Execution was a finance company that provided the ProQuote software used by the London Stock Exchange. The company was dissolved when it was acquired by NetBuilder in June 2007.
+	</div>
+	<div class="technologies">
+		<strong>Technologies:</strong>Python, Java, Perl
+	</div>
+	<div class="responsibilities">
+		<ul>
+			<li>Trainee developer responsible for maintaining the ProQuote trading platform for the London Stock Exchange.</li>
+		</ul>	
+	</div>	
+</div>
+
+<div class="sub-heading">Additional IT Skills</div>
+<div class="additional-skills">
+	Knowledge of all major operating systems including Linux and Microsoft variants. Excellent knowledge of CVS, SVN and Git from experience and training.	
+</div>
+
+</body>
 </html>
