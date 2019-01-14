@@ -43,7 +43,7 @@ body {
 
 .content {
   position:relative;
-  left: -50px;
+  left: -11%;
   min-width:280px;
 }
 
@@ -64,10 +64,10 @@ body {
   -webkit-margin-after:0px;
   -webkit-margin-start:0px;
   -webkit-margin-end:0px;
-  -moz-padding-start: 2%;
-  -moz-margin-start: 0px;
-  -moz-margin-end: 0px;
-  margin-top:20px;
+  -moz-padding-start:2%;
+  -moz-margin-start:0px;
+  -moz-margin-end:0px;
+  margin-top:10px;
 }
 
 .footer {
@@ -79,14 +79,15 @@ body {
 }
 
 @media only screen and (device-height:360px) {
-  #name::after {
-    content: "";
-  }
-  #job_title {
-    display:block;
-  }
   .heading {
     margin-bottom:3em;
+  }
+  .content {
+    line-height:1.5em;
+    padding-bottom:5px;
+  }
+  .picture {
+      margin-top:10px;
   }
 }
 
