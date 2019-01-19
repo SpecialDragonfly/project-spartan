@@ -101,12 +101,104 @@
 		margin-top:5px;
 	}
 
+	.job .technologies .tech::after {
+		content: ", ";
+	}
+
 	.job .about {
 		margin-bottom:5px;
 	}
 
 	.job .technologies {
 		clear: both;
+	}
+
+	@media only screen and (max-device-width:640px) and (orientation: portrait) {
+	  body {
+	    font-size:18px;
+	  }
+	  .personal .education {
+	  	font-size:14px;
+	  }
+	  .personal .address {
+	  	font-size:14px;
+	  	margin-bottom:2em;
+	  }
+	  .personal .email {
+	  	font-size:2.5em;
+	  	width:40%;
+	  }
+	  .personal .mobile {
+	  	font-size:2.5em;
+	  	width:30%;
+	  }
+	  .sub-heading {
+	  	padding-top:10px;
+	  	padding-bottom:10px;
+	  }
+	  .job .details .to {
+	  	font-size:2.5em;
+	  	width:40%;
+	  	text-align: right;
+	  }
+	  .job .details .from {
+	  	font-size:2.5em;
+	  	width:40%;
+	  }
+	  .job .details .name {
+	  	font-size:2.5em;
+	  }
+	  .job .about {
+	  	clear:both;
+	  }
+	  .job .technologies {
+	  	margin-top:1.5em;
+	  	margin-bottom:1.5em;
+	  }
+	  .job .technologies .tech::after {
+		content: "";
+	  }
+	  .job .technologies .tech {
+	  	font-size:2.5em;
+	  	border:1px solid black;
+	  	padding: .25em .6em;
+	  	text-align: center;
+	  	display: inline-block;
+	  	white-space: nowrap;
+	  	border-radius:10rem;
+
+	  }
+
+	  #name::after {
+	    content: "";
+	  }
+	  #job_title {
+	    display:block;
+	  }
+	  .heading {
+	    
+	  } 
+
+	 .content {
+	    position:inherit;
+	    left:auto;
+	    min-width:0px;
+	    text-align:center;
+	    line-height:1.5em;
+	  }
+	  .card {
+	    width:40%;
+	    min-width:320px;
+	    max-width:none;
+	    padding:5px;
+	  }
+	  .picture {
+	    margin-top:5px;
+	  }
+	 .information {
+	    text-align:left;
+	    width:100%;
+	  }
 	}
 
 	@media print {
@@ -179,15 +271,22 @@ My career so far has primarily been in the financial services industry for this 
 <div class="sub-heading">Work Experience</div>
 <div class="job">
 	<div class="details">
-		<div class="to"><strong>To:</strong>Present</div>
 		<div class="name"><span>Movem Ltd:</span><span>Lead Backend Developer</span></div>
+		<div class="to"><strong>To:</strong>Present</div>
 		<div class="from"><strong>From:</strong> April 2018</div>
 	</div>
 	<div class="about">
 		Movem are a property-technology (prop-tech) company. Recently acquired by Barbon, they are changing the way people manage lettings. With the introduction of Open Banking, no longer will tenants need to provide copies of their statements, instead they'll log into their bank, Movem will get the transactions, and then using our algorithms, verify income, previous rent and the tenants affordability. This process previously took days, it now takes seconds.
 	</div>
 	<div class="technologies">
-		<strong>Technologies:</strong>PHP, MySQL, NodeJS, Docker, Kubernetes, Google Cloud Services, Golang
+		<strong>Technologies:</strong>
+		<span class="tech">PHP</span> 
+		<span class="tech">MySQL</span>
+		<span class="tech">NodeJS</span>
+		<span class="tech">Docker</span>
+		<span class="tech">Kubernetes</span>
+		<span class="tech">Google Cloud Services</span>
+		<span class="tech">Golang</span>
 	</div>
 	<div class="responsibilities">
 		Responsible for:
@@ -200,15 +299,23 @@ My career so far has primarily been in the financial services industry for this 
 </div>
 <div class="job">
 	<div class="details">
-		<div class="to"><strong>To:</strong>April 2018</div>
 		<div class="name"><span>World First Ltd:</span><span>Development Team Lead</span></div>
+		<div class="to"><strong>To:</strong>April 2018</div>
 		<div class="from"><strong>From:</strong> May 2016</div>
 	</div>
 	<div class="about">
 		WorldFirst is a financial-technology (fin-tech) company, and they specialise is moving money around the world. Helping supply chains over multiple currencies became a matter of clicking a few buttons; it was simpler, cheaper and faster than commecial banks were doing it. This wasn't a holiday spending money operation, this was multiple millions of dollars being paid to a global payroll. This was a supplier manufacturing in China, selling in Britain and getting paid in Euros. This was an armchair seller, finding a product and within a day selling it globally and getting paid in their native currency.
 	</div>
 	<div class="technologies">
-		<strong>Technologies:</strong>PHP, MySQL, Vagrant, Docker, Ansible, Java, RabbitMQ, LeSS (Large Scale Scrum)
+		<strong>Technologies:</strong>
+		<span class="tech">PHP</span>
+		<span class="tech">MySQL</span>
+		<span class="tech">Vagrant</span>
+		<span class="tech">Docker</span>
+		<span class="tech">Ansible</span>
+		<span class="tech">Java</span>
+		<span class="tech">RabbitMQ</span>
+		<span class="tech">LeSS (Large Scale Scrum)</span>
 	</div>
 	<div class="responsibilities">
 		Responsible for:
@@ -221,12 +328,18 @@ My career so far has primarily been in the financial services industry for this 
 </div>
 <div class="job">
 	<div class="details">
-		<div class="to"><strong>To:</strong>May 2016</div>
 		<div class="name"><span>World First Ltd:</span><span>Senior Developer</span></div>
+		<div class="to"><strong>To:</strong>May 2016</div>
 		<div class="from"><strong>From:</strong>November 2014</div>
 	</div>
 	<div class="technologies">
-		<strong>Technologies:</strong>PHP, MySQL, PHPUnit, Behat, Vagrant, Ansible
+		<strong>Technologies:</strong>
+		<span class="tech">PHP</span>
+		<span class="tech">MySQL</span>
+		<span class="tech">PHPUnit</span>
+		<span class="tech">Behat</span>
+		<span class="tech">Vagrant</span>
+		<span class="tech">Ansible</span>
 	</div>
 	<div class="responsibilities">
 		Responsible for:
@@ -241,15 +354,20 @@ My career so far has primarily been in the financial services industry for this 
 
 <div class="job">
 	<div class="details">
-		<div class="to"><strong>To:</strong>November 2014</div>
 		<div class="name"><span>City and Guilds Kineo: </span><span>Senior Technical Consultant</span></div>
+		<div class="to"><strong>To:</strong>November 2014</div>
 		<div class="from"><strong>From:</strong>August 2013</div>
 	</div>
 	<div class="about">
 		Kineo, a City and Guilds company, is an e-learning company. They specialise in bespoke e-learning courses managed via Moodle or Totara. From large multinationals to small local charities, e-learning allowed their staff to progress at their own speed, in their own time, to broaden their knowledge voluntarily and aid in their personal career growth.
 	</div>
 	<div class="technologies">
-		<strong>Technologies:</strong>PHP, MySQL, Moodle, Totara, jQuery
+		<strong>Technologies:</strong>
+		<span class="tech">PHP</span>
+		<span class="tech">MySQL</span>
+		<span class="tech">Moodle</span>
+		<span class="tech">Totara</span>
+		<span class="tech">jQuery</span>
 	</div>
 	<div class="responsibilities">
 		The company focused on building customisations of Totara; the business side of Moodle. Responsibilities included:
@@ -262,15 +380,22 @@ My career so far has primarily been in the financial services industry for this 
 </div>
 <div class="job">
 	<div class="details">
-		<div class="to"><strong>To:</strong>August 2013</div>
 		<div class="name"><span>Sensatus Ltd:</span><span>Senior Developer</span></div>
+		<div class="to"><strong>To:</strong>August 2013</div>
 		<div class="from"><strong>From:</strong>March 2010</div>
 	</div>
 	<div class="about">
 		Sensatus is a financial technology (fin-tech) company allowing users to create complicated automated trading algorithms without needing to know how to program at all. Algorithms could be run on the tick level, all the way up to days allowing for different trading strategies. Integration with London Capital Group allowed for spread betting, alternatively a 'fantasy' trading platform was available.
 	</div>
 	<div class="technologies">
-		<strong>Technologies:</strong>PHP, MySQL, C#, Java, jQuery, Backbone, RequireJS
+		<strong>Technologies:</strong>
+		<span class="tech">PHP</span>
+		<span class="tech">MySQL</span>
+		<span class="tech">C#</span>
+		<span class="tech">Java</span>
+		<span class="tech">jQuery</span>
+		<span class="tech">Backbone</span>
+		<span class="tech">RequireJS</span>
 	</div>
 	<div class="responsibilities">
 		<ul>
@@ -283,15 +408,23 @@ My career so far has primarily been in the financial services industry for this 
 </div>
 <div class="job">
 	<div class="details">
-		<div class="to"><strong>To:</strong>March 2010</div>
 		<div class="name"><span>Elysium Ltd:</span><span>Developer</span></div>
+		<div class="to"><strong>To:</strong>March 2010</div>
 		<div class="from"><strong>From:</strong>April 2008</div>
 	</div>
 	<div class="about">
 		Elysium is a media company, handling website design, creation and management for other companies. They also wrote SIPM (Sussex Injestive Pattern Monitor) which has ongoing use in psychological studies around eating disorders. Their largest clients included BT and Express &amp; Global.
 	</div>
 	<div class="technologies">
-		<strong>Technologies:</strong>Ruby on Rails, Java, PHP, PostgreSQL, MySQL, C#, ASP.Net, Prototype
+		<strong>Technologies:</strong>
+		<span class="tech">Ruby on Rails</span>
+		<span class="tech">Java</span>
+		<span class="tech">PHP</span>
+		<span class="tech">PostgreSQL</span>
+		<span class="tech">MySQL</span>
+		<span class="tech">C#</span>
+		<span class="tech">ASP.Net</span>
+		<span class="tech">Prototype</span>
 	</div>
 	<div class="responsibilities">
 		<ul>
@@ -303,15 +436,18 @@ My career so far has primarily been in the financial services industry for this 
 
 <div class="job">
 	<div class="details">
-		<div class="to"><strong>To:</strong>April 2008</div>
 		<div class="name"><span>Best Execution Software Ltd:</span><span>Junior Developer</span></div>
+		<div class="to"><strong>To:</strong>April 2008</div>
 		<div class="from"><strong>From:</strong>June 2007</div>
 	</div>
 	<div class="about">
 		Best Execution was a finance company that provided the ProQuote software used by the London Stock Exchange. The company was dissolved when it was acquired by NetBuilder in June 2007.
 	</div>
 	<div class="technologies">
-		<strong>Technologies:</strong>Python, Java, Perl
+		<strong>Technologies:</strong>
+		<span class="tech">Python</span>
+		<span class="tech">Java</span>
+		<span class="tech">Perl</span>
 	</div>
 	<div class="responsibilities">
 		<ul>
