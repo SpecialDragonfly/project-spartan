@@ -166,7 +166,6 @@
 	  	display: inline-block;
 	  	white-space: nowrap;
 	  	border-radius:10rem;
-
 	  }
 
 	  #name::after {
@@ -175,14 +174,11 @@
 	  #job_title {
 	    display:block;
 	  }
-	  .heading {
-	    
-	  } 
 
 	 .content {
 	    position:inherit;
 	    left:auto;
-	    min-width:0px;
+	    min-width:0;
 	    text-align:center;
 	    line-height:1.5em;
 	  }
@@ -215,16 +211,13 @@
 
 		.personal .contact .mobile {
 			width:30mm;
-			/*border: 1px solid black;*/
 		}
 		.personal .contact .linkedin {
 			width:200mm;
 			overflow:hidden;
-			/*border: 1px solid red;*/
 		}
 		.personal .contact .email {
 			width:60mm;
-			/*border: 1px solid blue;*/
 		}
 
 		.job {
@@ -247,7 +240,7 @@
 <div class="heading">Dominic Orme</div>
 <div class="personal">
 	<div class="education">BSc Theoretical Physics, University Of Sussex 2004 - 2007</div>
-	<div class="address">52 Dunstall Farm Road, Burgess Hill, RH15 8BJ</div>
+	<div class="address">Kelvedon, Essex</div>
 	<div class="contact">
 		<div class="mobile">07858 003 505</div>
 		<div class="email">Dominic.Orme@googlemail.com</div>
@@ -264,9 +257,34 @@
 
 <div class="sub-heading">Work Experience</div>
 <div class="job">
+	<div class="details">
+		<div class="name"><span>Tarabut:</span><span>Engineering Manager</span></div>
+		<div class="to"><strong>To:</strong>Present</div>
+		<div class="from"><strong>From:</strong> April 2022</div>
+	</div>
+	<div class="about">
+		Tarabut is an Open Banking and Open Finance facilitator for banks within the MENA region. They are responsible for getting 90% of the banks in Bahrain, and the first 3 banks in KSA certified by their respective financial service authorities.
+	</div>
+	<div class="technologies">
+		<strong>Technologies:</strong>
+		<span class="tech">Java</span>
+		<span class="tech">SpringBoot</span>
+		<span class="tech">PostgreSQL</span>
+		<span class="tech">Docker</span>
+	</div>
+	<div class="responsibilities">
+		Responsible for:
+		<ul>
+			<li>Facilitating banks in the MENA region to become compliant with their Open Banking Standards</li>
+			<li>Direct line management of 3 remote teams</li>
+			<li>Processes and Quality within the teams</li>
+		</ul>
+	</div>
+</div>
+<div class="job">
     <div class="details">
         <div class="name"><span>Builderstorm Ltd:</span><span>Technical Director</span></div>
-        <div class="to"><strong>To:</strong>Present</div>
+        <div class="to"><strong>To:</strong>April 2022</div>
         <div class="from"><strong>From:</strong> June 2019</div>
     </div>
     <div class="about">
@@ -282,8 +300,10 @@
         Responsible for:
         <ul>
             <li>R&amp;D, ISO Standard Compliance</li>
+			<li>Processes and Quality Assurance</li>
             <li>Technical oversight of remote teams</li>
             <li>Whole system architecture</li>
+			<li>Strategy and future planning</li>
         </ul>
     </div>
 </div>
@@ -294,17 +314,17 @@
 		<div class="from"><strong>From:</strong> April 2018</div>
 	</div>
 	<div class="about">
-		Movem are a property-technology (prop-tech) company. Recently acquired by Barbon, they are changing the way people manage lettings. With the introduction of Open Banking, no longer will tenants need to provide copies of their statements, instead they'll log into their bank, Movem will get the transactions, and then using our algorithms, verify income, previous rent and the tenants affordability. This process previously took days, it now takes seconds.
+		Movem were a property-technology (prop-tech) company that used proprietary algorithms to parse transactions to assess tenant affordability. The company was dissolved when it was acquired by Barbon in June 2019.
 	</div>
 	<div class="technologies">
 		<strong>Technologies:</strong>
-		<span class="tech">PHP</span> 
+		<span class="tech">NodeJS</span>	
 		<span class="tech">MySQL</span>
-		<span class="tech">NodeJS</span>
+		<span class="tech">GoLang</span>
 		<span class="tech">Docker</span>
 		<span class="tech">Kubernetes</span>
 		<span class="tech">Google Cloud Services</span>
-		<span class="tech">Golang</span>
+		<span class="tech">PHP</span>
 	</div>
 	<div class="responsibilities">
 		Responsible for:
@@ -315,24 +335,22 @@
         </ul>		
 	</div>
 </div>
+<div class="break">&nbsp;</div>
 <div class="job">
 	<div class="details">
 		<div class="name"><span>World First Ltd:</span><span>Development Team Lead</span></div>
 		<div class="to"><strong>To:</strong>April 2018</div>
-		<div class="from"><strong>From:</strong> May 2016</div>
+		<div class="from"><strong>From:</strong> November 2014</div>
 	</div>
 	<div class="about">
-		WorldFirst is a financial-technology (fin-tech) company, and they specialise is moving money around the world. Helping supply chains over multiple currencies became a matter of clicking a few buttons; it was simpler, cheaper and faster than commecial banks were doing it. This wasn't a holiday spending money operation, this was multiple millions of dollars being paid to a global payroll. This was a supplier manufacturing in China, selling in Britain and getting paid in Euros. This was an armchair seller, finding a product and within a day selling it globally and getting paid in their native currency.
+		WorldFirst is a fin-tech company that specialises in moving money around the world. With a few button clicks, supply chains became shorter; it was simpler, cheaper and faster than commercial banks. They handle global payroll, suppliers manufacturing in China, selling in Britain and getting paid in Euros, or buying a house in another country.
 	</div>
 	<div class="technologies">
 		<strong>Technologies:</strong>
-		<span class="tech">PHP</span>
-		<span class="tech">MySQL</span>
-		<span class="tech">Vagrant</span>
-		<span class="tech">Docker</span>
-		<span class="tech">Ansible</span>
 		<span class="tech">Java</span>
-		<span class="tech">RabbitMQ</span>
+		<span class="tech">MySQL</span>
+		<span class="tech">Docker</span>
+		<span class="tech">PHP</span>
 		<span class="tech">LeSS (Large Scale Scrum)</span>
 	</div>
 	<div class="responsibilities">
@@ -341,32 +359,7 @@
 			<li>Managing a team of ten, including staff satisfaction, career progression, training and learning.</li>
 			<li>Documenting and managing the high level design of the APIs</li>
 			<li>Facilitating communication, either between teams, or between World First and its external partnerships, including business analysts, product managers and external sources.</li>
-		</ul>	
-	</div>
-</div>
-
-<div class="break">&nbsp;</div>
-
-<div class="job">
-	<div class="details">
-		<div class="name"><span>World First Ltd:</span><span>Senior Developer</span></div>
-		<div class="to"><strong>To:</strong>May 2016</div>
-		<div class="from"><strong>From:</strong>November 2014</div>
-	</div>
-	<div class="technologies">
-		<strong>Technologies:</strong>
-		<span class="tech">PHP</span>
-		<span class="tech">MySQL</span>
-		<span class="tech">PHPUnit</span>
-		<span class="tech">Behat</span>
-		<span class="tech">Vagrant</span>
-		<span class="tech">Ansible</span>
-	</div>
-	<div class="responsibilities">
-		Responsible for:
-		<ul>
-			<li>Designing, building and testing new APIs to improve the market position of World First.</li>
-			<li>Stakeholder management with non-technical colleagues.</li>
+			<li>Senior Developer November 2014 - May 2016</li>
 		</ul>	
 	</div>
 </div>
@@ -382,7 +375,6 @@
 	</div>
 	<div class="technologies">
 		<strong>Technologies:</strong>
-		<span class="tech">PHP</span>
 		<span class="tech">MySQL</span>
 		<span class="tech">Moodle</span>
 		<span class="tech">Totara</span>
@@ -404,14 +396,15 @@
 		<div class="from"><strong>From:</strong>March 2010</div>
 	</div>
 	<div class="about">
-		Sensatus is a financial technology (fin-tech) company allowing users to create complicated automated trading algorithms without needing to know how to program at all. Algorithms could be run on the tick level, all the way up to days allowing for different trading strategies. Integration with London Capital Group allowed for spread betting, alternatively a 'fantasy' trading platform was available.
+		Sensatus was a fin-tech company allowing users to create complicated automated trading algorithms without needing to know how to program at all. The company was dissolved in Feb 2023
 	</div>
 	<div class="technologies">
 		<strong>Technologies:</strong>
-		<span class="tech">PHP</span>
+		<span class="tech">Java</span>
+		<span class="tech">Scala</span>	
 		<span class="tech">MySQL</span>
 		<span class="tech">C#</span>
-		<span class="tech">Java</span>
+		<span class="tech">PHP</span>
 		<span class="tech">jQuery</span>
 		<span class="tech">Backbone</span>
 		<span class="tech">RequireJS</span>
@@ -438,7 +431,6 @@
 		<strong>Technologies:</strong>
 		<span class="tech">Ruby on Rails</span>
 		<span class="tech">Java</span>
-		<span class="tech">PHP</span>
 		<span class="tech">PostgreSQL</span>
 		<span class="tech">MySQL</span>
 		<span class="tech">C#</span>
